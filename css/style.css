@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+html{    
+  font-size: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.7;
+
+}
+img {
+  max-width: 100%;
+}
+
+.content {
+  max-width: 800px;
+  margin: 100px auto;
+  
+}
+h2{
+  font-size: 2rem;
+  position:relative;
+  /* display: inline-block; */
+}
+
+h2::before{
+  position: absolute;
+  content:"";
+  display: inline-block;
+  width:100px;
+  height: 1px;
+  background-color: #222;
+  top:50%;
+  left:-120px;
+  transform: translate(15%,-50%);
+
+}
+p{
+  width:50%;
+  margin:30px 0;
+}
+.picture img{
+  width:100%;
+}
+
+
+@media screen and (max-width:1100px){
+  .content{
+    padding:0 20px;
+  }
+
+  h2{
+    left:120px;
+  
+  }
+
+}
